@@ -25,7 +25,7 @@ function handleClick() {
     let filteredData = tableData;
 
     if (date) {
-        filteredData = filteredData.filter(row => row.datetime === date);
+        filterData = filteredData.filter(row => row.datetime === date);
     }
     
     buildTable(filteredData);
